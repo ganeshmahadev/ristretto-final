@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ristretto | Login and Signup</title>
+  <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="inner-box" id="card">
+        <div class="card-front">
+          <h2>LOGIN</h2>
+          <form action="index.html" method="post">
+            <input class="input-box" type="email" name="" value="" placeholder="Email Id" required>
+            <input class="input-box" type="password" name="" value="" placeholder="Password" required>
+            <button class="submit-btn" type="submit" name="button">Submit</button>
+            <input type="checkbox" name="" value=""><span>Remember me</span>
+          </form>
+          <button type="button" class="btn" name="button" onclick="openRegister()">I'm new here</button>
+          <a href="#">Forgot password</a>
+        </div>
+        <div class="card-back">
+          <h2>SIGN UP</h2>
+          <form action="index.html" method="post">
+            <input type="text" class="input-box" placeholder="Your Name">
+            <input class="input-box" type="email" placeholder="Email Id" required>
+            <input class="input-box" type="password" placeholder="Password" required>
+            <button class="submit-btn" type="submit" name="button">Submit</button>
+            <input type="checkbox" name="" value=""><span>Remember me</span>
+          </form>
+          <button type="button" class="btn" name="button" onclick="openLogin()">I've an account</button>
+          <a href="#">Forgot password</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var card = document.getElementById("card");
+
+    function openRegister() {
+      card.style.transform = "rotateY(-180deg)"
+    }
+
+    function openLogin() {
+      card.style.transform = "rotateY(0deg)"
+    }
+  </script>
+</body>
+
+</html>
